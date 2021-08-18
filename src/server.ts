@@ -6,7 +6,7 @@ import cors from "cors";
 
 import { MONGODB_URI } from "./util/secrets";
 
-import { ProductRoutes } from "./routes/productRoutes";
+import { BusinessRoutes } from "./routes/businessRoutes";
 import { UserRoutes } from "./routes/userRoutes";
 
 class Server {
@@ -21,7 +21,7 @@ class Server {
 
   public routes(): void {
     this.app.use("/api/user", new UserRoutes().router);
-    this.app.use("/api/products", new ProductRoutes().router);
+    this.app.use("/api/business", new BusinessRoutes().router);
   }
 
   public config(): void {

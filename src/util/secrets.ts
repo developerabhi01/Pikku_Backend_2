@@ -1,6 +1,6 @@
 
 // export const MONGODB_URI = process.env["MONGODB_URI"];
-export const MONGODB_URI = "mongodb+srv://pikku:Pikku123@pikku.jqepz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+export const MONGODB_URI = "mongodb+srv://pikku:Pikku123@pikku.jqepz.mongodb.net/pikkuDB?retryWrites=true&w=majority";
 
 if (!MONGODB_URI) {
     console.log("No mongo connection string. Set MONGODB_URI environment variable.");
